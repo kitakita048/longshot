@@ -1,0 +1,107 @@
+.c-wrapper
+  margin 0 auto
+  +pc()
+    max-width: 1000px
+    width 95%
+  +sp()
+    width 90%
+.c-content
+  &:first-child
+    margin-top 60px
+  &:not(&:last-child)
+    +pc()
+      margin-bottom 40px
+    +sp()
+      margin-bottom 30px
+.c-hdg
+  font-size 1.5rem
+  font-weight bold
+  color #5B5B5B
+  margin-bottom 20px
+  background-color #F7EACF
+  display inline-block
+  padding 0.2em
+
+.c-hdg--main
+  font-size 2.2rem
+  font-weight bold
+  color #333
+  margin-bottom 20px
+  
+
+.c-lead
+  font-size 1rem
+  font-weight normal
+  line-height 1.8
+  color #5B5B5B
+  a
+    color #1976d2
+    text-decoration underline
+  li 
+    list-style inside
+    text-indent -1.4em
+    padding-left 1.4em
+  span 
+    font-size 0.8rem
+    color #616161
+
+.c-map
+  width 100%
+  position relative
+  padding-top 56.25%
+  margin-top 20px
+  iframe
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+
+.c-profile_wrap
+  width 100%
+  display flex
+  +pc()
+    flex-wrap wrap
+    justify-content space-between
+    gap 30px
+  +sp()
+    flex-direction column
+    gap 50px
+    
+.c-profile_item
+  +pc()
+    max-width 480px
+    width 48%
+
+
+.c-profile_name
+  font-size 1.2rem
+  font-weight bold
+  line-height 1.5
+  color #5B5B5B
+  margin-bottom 10px
+  span
+    font-size 1rem
+    padding-left 1em
+
+.c-profile_img
+  margin-top 20px
+
+.c-profile_img--only
+  margin-top 20px
+  margin-bottom 10px
+
+.c-profile_copyright
+  font-size 0.8rem
+  font-weight 400
+  color #616161
+  margin-top 10px
+  &.is-right
+    text-align right
+    padding-right 1em
+
+.c-copyright
+  font-size 0.8rem
+  font-weight 400
+  text-align center
+  color #616161
